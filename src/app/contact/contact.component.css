@@ -1,0 +1,6 @@
+input.form-control:focus{
+    box-shadow: none;
+}
+.__top{
+    top:40px !important;
+}

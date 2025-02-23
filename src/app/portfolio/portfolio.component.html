@@ -1,0 +1,33 @@
+<section>
+    <div class="my-3 py-2 text-center color_title">
+        <h1 >PORTFOLIO COMPONENT</h1>
+    <div class="">
+        <div class="line mx-3 color_title1" ></div>
+          <i class="fas fa-star color_title"></i>
+            <div class="line mx-3 color_title1"></div>
+
+    </div>
+    </div>
+    <div class="container py-4 ">
+        <div class="row g-4 ">
+                @for(src of imgSrc; track $index) {
+                    <div class="col-md-4 cursor-pointer ">
+                        <div (click)="hidden=false ; linkimg=src " class="card border-0">
+                            <img class="card-img-top  d-block" 
+                            [src]="src"
+                            alt=".." />
+                            <div class="icons">
+                            <i class="fa-solid fa-plus text-white fa-6x "></i></div>
+                        </div>
+                    </div>
+                }
+          </div>      
+    </div>
+    
+    <div 
+    (click)="hideimg( $event.target,eleImg)"
+    [class.d-none]="hidden"
+     class="modal position-fixed start-0 top-0 w-100 h-100   d-flex justify-content-center align-items-center">
+    <img #eleImg class="w-25" [src]="linkimg" />
+    </div>
+</section>

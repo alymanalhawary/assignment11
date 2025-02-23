@@ -1,0 +1,47 @@
+<section class="py-4">
+<div class=" w-50 m-auto">
+    <h2 class="color_title  text-center">conatct section
+    </h2>
+    <div class="text-center">
+       <div class="line mx-3 bg-dark" ></div>
+     <i class="fas fa-star "></i>
+     <div class="line mx-3 bg-dark"></div> 
+    </div>  
+     <form class="text-success ">
+        <label [class.__top]="!username"for="username" class="position-relative top-0">UserName:</label>
+        <input
+        id="username" type="text"
+        class="form-control border-0 border-bottom py-3 position-relative"
+        placeholder="UserName"
+        name="username"
+        [(ngModel)]="username" 
+        >
+        <label [class.__top]="!userage" for="userage" class="position-relative top-0">UserAge:</label>
+        <input
+        id="userage" type="text"
+        class="form-control border-0 border-bottom py-3 position-relative"
+        placeholder="UserAge"
+        name="userage"
+        [(ngModel)]="userage"
+        >
+        <label [class.__top]="!useremail" for="userEmail" class="position-relative top-0">UserEmail:</label>
+        <input
+        id="useremail" type="text"
+        class="form-control border-0 border-bottom py-3 position-relative"
+        placeholder="UserEmail"
+        name="useremail"
+        [(ngModel)]="useremail"
+        >
+        <label [class.__top]="!userpassword" for="userpassword" class="position-relative top-0">UserPassword:</label>
+        <input
+        id="userpassword" type="text"
+        class="form-control border-0 border-bottom py-3 position-relative"
+        placeholder="UserPassword"
+        name="userpassword"
+        [(ngModel)]="userpassword"
+        >
+        <button class="my-3 bg-success-subtle border ">send Message</button>
+     </form>
+     
+</div>
+</section>

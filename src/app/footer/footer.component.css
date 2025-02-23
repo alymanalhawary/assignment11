@@ -1,0 +1,14 @@
+section{
+    background-color: #2C3E50;
+    padding: 50px;
+    color:#fff;
+}
+.col-md-4{
+    width: 33.3333%;
+}
+.icons{
+    text-align: center;
+}
+.footer{
+    background-color: #1A252F;
+}
